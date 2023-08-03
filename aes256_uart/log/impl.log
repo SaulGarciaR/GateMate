@@ -1,0 +1,775 @@
+GateMate (c) Place and Route
+Version 4.2 (28 Feb 2023)
+All Rights Reserved (c) Cologne Chip AG
+
+Command line Options:
+       h:  False
+       i: net/aes256_uart_synth.v
+       o: aes256_uart
+     mXA:   True
+     mMA:   True
+    Cinp:  False
+   Coutp:  False
+     cdf:   True
+     pin:   True
+     plc:   True
+       s:   True
+     cCP:   True
+     gCP:  False
+      AF:   True
+      dC:   True
+    uCIO:  False
+      pB:       
+      sp:  False
+     crf:  False
+       v:  False
+      Gs:      0
+      om:      3
+      sf:    0.8
+      dl:   True
+      df:   True
+   m_spi:      0
+      pr:   True
+     cgb:  False
+    cgbc:  False
+     cgo:      0
+      tm:      3
+      tp:      0
+   s_spi:      0
+     ics:  False
+     lib:   ccag
+     ccf: src/aes256_uart.ccf
+
+X_CONVERT Netlist Converter
+
+Library Mode used: CCAG_GateMate
+.......
+33965 Lines read
+
+found components:
+        CC_LUT2       315
+        CC_LUT4       979
+        CC_LUT3       546
+        CC_LUT1        10
+        CC_ADDF        51
+        CC_BUFG         1
+         CC_DFF      1333
+         CC_MX2        32
+        CC_IBUF         3
+        CC_OBUF         7
+
+REMOVE_UNUSED
+         0 unused Components removed
+REMOVE_BUF_INV
+         0 BUF removed
+         0 INV removed
+REPLACE_LUTS
+REPLACE_OTHERS
+Number of inserted dummy components 0
+876 new components inserted
+WRITE_REFCOMP
+SAVE_NET
+
+Conversion finished!
+ASCII netlist generated: aes256_uart_x_convert.prn
+Time (s):       0.603
+
+Read aes256_uart.net
+
+MAPPER started
+
+Map Adder
+8 Adder chains mapped
+
+During map of 143 CPEs 243 gates deleted!
+
+20 CPEs replaced by double bit CPEs
+
+Number of Combined CPEs:     0
+
+PLACER started
+
+FanOut statistics:
+FO:      1 count:   2471   70.4 %      connect count:   2471   20.8 %  cumulated:   2471   20.8 %
+FO:      2 count:    289    8.2 %      connect count:    578    4.9 %  cumulated:   3049   25.6 %
+FO:      3 count:    264    7.5 %      connect count:    792    6.7 %  cumulated:   3841   32.3 %
+FO:      4 count:    122    3.5 %      connect count:    488    4.1 %  cumulated:   4329   36.4 %
+FO:      5 count:     69    2.0 %      connect count:    345    2.9 %  cumulated:   4674   39.3 %
+FO:      6 count:     51    1.5 %      connect count:    306    2.6 %  cumulated:   4980   41.9 %
+FO:      7 count:     28    0.8 %      connect count:    196    1.6 %  cumulated:   5176   43.5 %
+FO:      8 count:    107    3.0 %      connect count:    856    7.2 %  cumulated:   6032   50.7 %
+FO:      9 count:     21    0.6 %      connect count:    189    1.6 %  cumulated:   6221   52.3 %
+FO:     10 count:     17    0.5 %      connect count:    170    1.4 %  cumulated:   6391   53.7 %
+FO:     11 count:     12    0.3 %      connect count:    132    1.1 %  cumulated:   6523   54.8 %
+FO:     12 count:     11    0.3 %      connect count:    132    1.1 %  cumulated:   6655   55.9 %
+FO:     13 count:      2    0.1 %      connect count:     26    0.2 %  cumulated:   6681   56.2 %
+FO:     14 count:      5    0.1 %      connect count:     70    0.6 %  cumulated:   6751   56.7 %
+FO:     15 count:      4    0.1 %      connect count:     60    0.5 %  cumulated:   6811   57.2 %
+FO:     16 count:      9    0.3 %      connect count:    144    1.2 %  cumulated:   6955   58.5 %
+FO:     23 count:      1    0.0 %      connect count:     23    0.2 %  cumulated:   6978   58.6 %
+FO:     25 count:      1    0.0 %      connect count:     25    0.2 %  cumulated:   7003   58.9 %
+FO:     29 count:      1    0.0 %      connect count:     29    0.2 %  cumulated:   7032   59.1 %
+FO:     32 count:      3    0.1 %      connect count:     96    0.8 %  cumulated:   7128   59.9 %
+FO:     36 count:      1    0.0 %      connect count:     36    0.3 %  cumulated:   7164   60.2 %
+FO:     44 count:      1    0.0 %      connect count:     44    0.4 %  cumulated:   7208   60.6 %
+FO:     48 count:      1    0.0 %      connect count:     48    0.4 %  cumulated:   7256   61.0 %
+FO:     49 count:      7    0.2 %      connect count:    343    2.9 %  cumulated:   7599   63.9 %
+FO:     53 count:      1    0.0 %      connect count:     53    0.4 %  cumulated:   7652   64.3 %
+FO:     59 count:      1    0.0 %      connect count:     59    0.5 %  cumulated:   7711   64.8 %
+FO:     74 count:      1    0.0 %      connect count:     74    0.6 %  cumulated:   7785   65.4 %
+FO:     77 count:      1    0.0 %      connect count:     77    0.6 %  cumulated:   7862   66.1 %
+FO:     83 count:      1    0.0 %      connect count:     83    0.7 %  cumulated:   7945   66.8 %
+FO:     91 count:      1    0.0 %      connect count:     91    0.8 %  cumulated:   8036   67.5 %
+FO:    110 count:      1    0.0 %      connect count:    110    0.9 %  cumulated:   8146   68.5 %
+FO:    120 count:      1    0.0 %      connect count:    120    1.0 %  cumulated:   8266   69.5 %
+FO:    122 count:      1    0.0 %      connect count:    122    1.0 %  cumulated:   8388   70.5 %
+FO:    226 count:      1    0.0 %      connect count:    226    1.9 %  cumulated:   8614   72.4 %
+FO:    365 count:      1    0.0 %      connect count:    365    3.1 %  cumulated:   8979   75.5 %
+FO:    369 count:      1    0.0 %      connect count:    369    3.1 %  cumulated:   9348   78.6 %
+FO:   1267 count:      1    0.0 %      connect count:   1267   10.6 %  cumulated:  10615   89.2 %
+FO:   1283 count:      1    0.0 %      connect count:   1283   10.8 %  cumulated:  11898  100.0 %
+Number of Outputs:  3512
+Average FanOut:     3,38
+
+FanIn statistics:
+FI:      1 count:     12    0.4 %      connect count:     12    0.1 %  cumulated:     12    0.1 %
+FI:      2 count:    576   17.1 %      connect count:   1152    9.7 %  cumulated:   1164    9.8 %
+FI:      3 count:    883   26.3 %      connect count:   2649   22.3 %  cumulated:   3813   32.1 %
+FI:      4 count:   1576   46.9 %      connect count:   6304   53.0 %  cumulated:  10117   85.1 %
+FI:      5 count:    207    6.2 %      connect count:   1035    8.7 %  cumulated:  11152   93.8 %
+FI:      6 count:     48    1.4 %      connect count:    288    2.4 %  cumulated:  11440   96.2 %
+FI:      7 count:     18    0.5 %      connect count:    126    1.1 %  cumulated:  11566   97.2 %
+FI:      8 count:     41    1.2 %      connect count:    328    2.8 %  cumulated:  11894  100.0 %
+Number of Inputs:  3361
+Average FanIn:     3,53
+
+Pins are placed from src/aes256_uart.ccf file
+
+Centerpoint:  x: 102.12 y: 112.71
+
+Centerpoint:  x: 102.12 y: 112.71
+
+
+Time (s):       0.783
+
+Netlength (initial): 2759.04
+
+Quadratisches Placement: TRUE
+    1  Netlength: 1607.39   diff(%): 0.00000   0
+    2  Netlength: 1505.54   diff(%): 6.76473   1
+    3  Netlength: 1515.67   diff(%): -0.66814   1
+    4  Netlength: 1533.32   diff(%): -1.15101   2
+
+Time (s):       0.824
+
+Component Statistics:
+          OR        99         2%
+         AND      1837        52%
+         XOR       549        15%
+       ORAND       127         3%
+       ICOMP         6         0%
+        MX2a       570        16%
+        MX4a       243         6%
+      ANDXOR        16         0%
+        ADDF         3         0%
+       ADDF2        40         1%
+      Route1         1         0%
+              --------
+Sum of COMB:      3491
+
+           D      1330        99%
+         DST         3         0%
+       C_0_1         8         0%
+              --------
+Sum of SEQ:       1341
+
+Sum of all:       4832
+
+Time (s):       1.095
+
+8 Adder Chains inserted
+
+Netlength after adder insertion: 82963.00
+
+Time (s):       1.124
+
+CPE input statistics:
+Fanin:  1 count:      8   CPE %:  0.2
+Fanin:  2 count:    576   CPE %: 17.2
+Fanin:  3 count:    883   CPE %: 26.3
+Fanin:  4 count:   1576   CPE %: 46.9
+Fanin:  5 count:    207   CPE %:  6.2
+Fanin:  6 count:     48   CPE %:  1.4
+Fanin:  7 count:     18   CPE %:  0.5
+Fanin:  8 count:     41   CPE %:  1.2
+Average:  3.54
+Number of Netlist Components:  3357
+Number of Inputs: 11890
+
+ROUTER started
+Number of usable Bridges using OUT2: 19233
+Number of Bridges to insert: 241
+
+
+Netlength after Bridge Insert:      89716
+
+Time (s):       2.464
+
+Preroute fixed connections
+...
+FanOut statistics:
+FO:      1 count:   2484   68.7 %      connect count:   2484   16.1 %  cumulated:   2484   16.1 %
+FO:      2 count:    383   10.6 %      connect count:    766    5.0 %  cumulated:   3250   21.1 %
+FO:      3 count:    255    7.1 %      connect count:    765    5.0 %  cumulated:   4015   26.0 %
+FO:      4 count:    125    3.5 %      connect count:    500    3.2 %  cumulated:   4515   29.3 %
+FO:      5 count:     60    1.7 %      connect count:    300    1.9 %  cumulated:   4815   31.2 %
+FO:      6 count:     46    1.3 %      connect count:    276    1.8 %  cumulated:   5091   33.0 %
+FO:      7 count:     24    0.7 %      connect count:    168    1.1 %  cumulated:   5259   34.1 %
+FO:      8 count:    114    3.2 %      connect count:    912    5.9 %  cumulated:   6171   40.0 %
+FO:      9 count:     19    0.5 %      connect count:    171    1.1 %  cumulated:   6342   41.1 %
+FO:     10 count:     13    0.4 %      connect count:    130    0.8 %  cumulated:   6472   41.9 %
+FO:     11 count:     14    0.4 %      connect count:    154    1.0 %  cumulated:   6626   42.9 %
+FO:     12 count:     16    0.4 %      connect count:    192    1.2 %  cumulated:   6818   44.2 %
+FO:     13 count:      4    0.1 %      connect count:     52    0.3 %  cumulated:   6870   44.5 %
+FO:     14 count:      2    0.1 %      connect count:     28    0.2 %  cumulated:   6898   44.7 %
+FO:     15 count:      2    0.1 %      connect count:     30    0.2 %  cumulated:   6928   44.9 %
+FO:     16 count:     12    0.3 %      connect count:    192    1.2 %  cumulated:   7120   46.1 %
+FO:     18 count:      2    0.1 %      connect count:     36    0.2 %  cumulated:   7156   46.4 %
+FO:     19 count:      1    0.0 %      connect count:     19    0.1 %  cumulated:   7175   46.5 %
+FO:     20 count:      2    0.1 %      connect count:     40    0.3 %  cumulated:   7215   46.7 %
+FO:     21 count:      1    0.0 %      connect count:     21    0.1 %  cumulated:   7236   46.9 %
+FO:     22 count:      2    0.1 %      connect count:     44    0.3 %  cumulated:   7280   47.2 %
+FO:     24 count:      1    0.0 %      connect count:     24    0.2 %  cumulated:   7304   47.3 %
+FO:     25 count:      1    0.0 %      connect count:     25    0.2 %  cumulated:   7329   47.5 %
+FO:     28 count:      2    0.1 %      connect count:     56    0.4 %  cumulated:   7385   47.8 %
+FO:     30 count:      1    0.0 %      connect count:     30    0.2 %  cumulated:   7415   48.0 %
+FO:     32 count:      2    0.1 %      connect count:     64    0.4 %  cumulated:   7479   48.5 %
+FO:     36 count:      1    0.0 %      connect count:     36    0.2 %  cumulated:   7515   48.7 %
+FO:     48 count:      1    0.0 %      connect count:     48    0.3 %  cumulated:   7563   49.0 %
+FO:     49 count:      7    0.2 %      connect count:    343    2.2 %  cumulated:   7906   51.2 %
+FO:     53 count:      1    0.0 %      connect count:     53    0.3 %  cumulated:   7959   51.6 %
+FO:     57 count:      1    0.0 %      connect count:     57    0.4 %  cumulated:   8016   51.9 %
+FO:     58 count:      1    0.0 %      connect count:     58    0.4 %  cumulated:   8074   52.3 %
+FO:     71 count:      1    0.0 %      connect count:     71    0.5 %  cumulated:   8145   52.8 %
+FO:     76 count:      1    0.0 %      connect count:     76    0.5 %  cumulated:   8221   53.3 %
+FO:     81 count:      1    0.0 %      connect count:     81    0.5 %  cumulated:   8302   53.8 %
+FO:     82 count:      1    0.0 %      connect count:     82    0.5 %  cumulated:   8384   54.3 %
+FO:     87 count:      1    0.0 %      connect count:     87    0.6 %  cumulated:   8471   54.9 %
+FO:    108 count:      1    0.0 %      connect count:    108    0.7 %  cumulated:   8579   55.6 %
+FO:    120 count:      1    0.0 %      connect count:    120    0.8 %  cumulated:   8699   56.4 %
+FO:    122 count:      1    0.0 %      connect count:    122    0.8 %  cumulated:   8821   57.2 %
+FO:    208 count:      1    0.0 %      connect count:    208    1.3 %  cumulated:   9029   58.5 %
+FO:    307 count:      1    0.0 %      connect count:    307    2.0 %  cumulated:   9336   60.5 %
+FO:    363 count:      2    0.1 %      connect count:    726    4.7 %  cumulated:  10062   65.2 %
+FO:   1267 count:      1    0.0 %      connect count:   1267    8.2 %  cumulated:  11329   73.4 %
+FO:   1283 count:      2    0.1 %      connect count:   2566   16.6 %  cumulated:  13895   90.0 %
+FO:   1539 count:      1    0.0 %      connect count:   1539   10.0 %  cumulated:  15434  100.0 %
+Number of Outputs:  3616
+Average FanOut:     4,26
+
+FanIn statistics:
+FI:      1 count:     12    0.4 %      connect count:     12    0.1 %  cumulated:     12    0.1 %
+FI:      2 count:    576   17.1 %      connect count:   1152    9.7 %  cumulated:   1164    9.8 %
+FI:      3 count:    883   26.3 %      connect count:   2649   22.3 %  cumulated:   3813   32.1 %
+FI:      4 count:   1576   46.9 %      connect count:   6304   53.0 %  cumulated:  10117   85.1 %
+FI:      5 count:    207    6.2 %      connect count:   1035    8.7 %  cumulated:  11152   93.8 %
+FI:      6 count:     48    1.4 %      connect count:    288    2.4 %  cumulated:  11440   96.2 %
+FI:      7 count:     18    0.5 %      connect count:    126    1.1 %  cumulated:  11566   97.2 %
+FI:      8 count:     41    1.2 %      connect count:    328    2.8 %  cumulated:  11894  100.0 %
+Number of Inputs:  3361
+Average FanIn:     3,53
+
+Time (s):       2.614
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+
+Route statistics:   MUX/Con: 1.79   not routed: 3381   Ripups: 0
+mode:1
+...................
+
+Route statistics:   MUX/Con: 1.78   not routed: 3205   Ripups: 0
+mode:2
+.............................................................................................................................................................................................................................................................................................................
+
+Route statistics:   MUX/Con: 2.05   not routed: 250   Ripups: 0
+mode:3
+..
+
+Route statistics:   MUX/Con: 2.05   not routed: 204   Ripups: 0
+mode:4
+
+
+Route statistics:   MUX/Con: 2.05   not routed: 284   Ripups: 0
+mode:5
+.....
+
+Route statistics:   MUX/Con: 2.05   not routed: 207   Ripups: 0
+mode:6
+..............
+
+Route statistics:   MUX/Con: 2.10   not routed: 61   Ripups: 0
+mode:7
+.....
+
+Route statistics:   MUX/Con: 2.12   not routed: 25   Ripups: 0
+mode:8
+.
+x80y83 <-> x82y83     1:    1414   1149  2:       0      0.....
+
+Route statistics:   MUX/Con: 2.12   not routed: 66   Ripups: 61
+mode:9
+..
+
+Route statistics:   MUX/Con: 2.12   not routed: 37   Ripups: 93
+mode:10
+...
+x87y84 <-> x89y82     1:    1399    214  2:       0      0
+x96y87 <-> x98y87     1:    2241   3410  2:    1413   1985.
+x87y88 <-> x89y88     1:    3404    184  2:    1412      0.
+x90y90 <-> x90y88     1:    1434     28  2:    1408      0
+x135y70 <-> x137y70     1:    1440   3980  2:    3004   2982.....
+
+Route statistics:   MUX/Con: 2.12   not routed: 158   Ripups: 251
+mode:11
+..........
+
+Route statistics:   MUX/Con: 2.13   not routed: 10   Ripups: 259
+mode:12
+
+
+Route statistics:   MUX/Con: 2.13   not routed: 6   Ripups: 264
+mode:13
+.
+x89y88 <-> x87y86     1:    3404      0  2:    1412   2835
+
+Route statistics:   MUX/Con: 2.13   not routed: 29   Ripups: 293
+mode:14
+..
+x89y88 <-> x91y86     1:       0   2217  2:    2835   4255..
+
+Route statistics:   MUX/Con: 2.13   not routed: 20   Ripups: 313
+mode:15
+.
+
+Route statistics:   MUX/Con: 2.13   not routed: 0   Ripups: 313
+mode:16
+
+Time (s):      10.818
+
+
+Route statistics:   MUX/Con: 2.13   not routed: 0   Ripups: 313
+mode:1
+
+Time (s):      10.867
+
+
+SDF Generation
+
+Time (s):      11.317
+
+Static Timing Analysis
+Longest Path from Q of Component 3025_2 to D-Input of Component 2561/5 Delay: 34768 ps
+Maximum Clock Frequency on CLK 4478 (4478/3):   28.76 MHz
+
+Path details:
+   3025_2 x125y97    CLK -> Q                                                         CPE-del:   320 ps   path-del:   320 ps
+   3025_2 x125y97  ->     813/5 x135y100C_XOR////               route-del:  2101 ps   CPE-del:   500 ps   path-del:  2921 ps
+    813_1 x135y100 ->    3709/6 x133y99 C_XOR////               route-del:   857 ps   CPE-del:   513 ps   path-del:  4292 ps
+   3709_1 x133y99  ->    4391/1 x140y101C_////Bridge            route-del:  1302 ps   CPE-del:   217 ps   path-del:  5813 ps
+   4391_2 x140y101 ->    1835/7 x137y102C_MX4b////              route-del:   654 ps   CPE-del:   578 ps   path-del:  6971 ps
+   1835_1 x137y102 ->    1836/2 x135y98 C_///XOR/               route-del:  1310 ps   CPE-del:   584 ps   path-del:  8829 ps
+   1836_2 x135y98  ->    4276/2 x140y93 C_////Bridge            route-del:  2220 ps   CPE-del:   217 ps   path-del: 11253 ps
+   4276_2 x140y93  ->     830/7 x137y95 C_MX4b////              route-del:  1196 ps   CPE-del:   578 ps   path-del: 12987 ps
+    830_1 x137y95  ->    3717/5 x127y100C_AND///AND/            route-del:  1965 ps   CPE-del:   500 ps   path-del: 15370 ps
+   3717_1 x127y100 ->    4392/2 x136y93 C_////Bridge            route-del:  1795 ps   CPE-del:   217 ps   path-del: 17384 ps
+   4392_2 x136y93  ->     853/7 x133y94 C_XOR////               route-del:   618 ps   CPE-del:   431 ps   path-del: 18407 ps
+    853_1 x133y94  ->     881/6 x122y79 C_XOR////               route-del:  2129 ps   CPE-del:   513 ps   path-del: 21057 ps
+    881_1 x122y79  ->    4215/3 x79y67  C_////Bridge            route-del:  2398 ps   CPE-del:   217 ps   path-del: 23674 ps
+   4215_2 x79y67   ->    1495/1 x79y68  C_///XOR/               route-del:   449 ps   CPE-del:   556 ps   path-del: 24668 ps
+   1495_2 x79y68   ->    1551/2 x71y65  C_///XOR/               route-del:  1674 ps   CPE-del:   584 ps   path-del: 26931 ps
+   1551_2 x71y65   ->    2561/5 x72y71  C_AND/D///              route-del:   667 ps   CPE-del:   367 ps   path-del: 27970 ps
+                         2561/5 x72y71   Setup D                route-del:   100 ps                       path-del: 28070 ps
+3025/14 x125y97 - 2561/14 x72y71  Clk-Skew                      route-del:  6698 ps                       path-del: 34768 ps
+
+
+Time (s):      11.358
+
+
+
+
+
+
+Route statistics:   MUX/Con: 2.13   not routed: 0   Ripups: 313
+mode:1
+
+Time (s):      11.361
+
+
+SDF Generation
+
+Time (s):      11.807
+
+Static Timing Analysis
+Longest Path from Q of Component 3025_2 to D-Input of Component 2561/5 Delay: 34768 ps
+Maximum Clock Frequency on CLK 4478 (4478/3):   28.76 MHz
+
+Path details:
+   3025_2 x125y97    CLK -> Q                                                         CPE-del:   320 ps   path-del:   320 ps
+   3025_2 x125y97  ->     813/5 x135y100C_XOR////               route-del:  2101 ps   CPE-del:   500 ps   path-del:  2921 ps
+    813_1 x135y100 ->    3709/6 x133y99 C_XOR////               route-del:   857 ps   CPE-del:   513 ps   path-del:  4292 ps
+   3709_1 x133y99  ->    4391/1 x140y101C_////Bridge            route-del:  1302 ps   CPE-del:   217 ps   path-del:  5813 ps
+   4391_2 x140y101 ->    1835/7 x137y102C_MX4b////              route-del:   654 ps   CPE-del:   578 ps   path-del:  6971 ps
+   1835_1 x137y102 ->    1836/2 x135y98 C_///XOR/               route-del:  1310 ps   CPE-del:   584 ps   path-del:  8829 ps
+   1836_2 x135y98  ->    4276/2 x140y93 C_////Bridge            route-del:  2220 ps   CPE-del:   217 ps   path-del: 11253 ps
+   4276_2 x140y93  ->     830/7 x137y95 C_MX4b////              route-del:  1196 ps   CPE-del:   578 ps   path-del: 12987 ps
+    830_1 x137y95  ->    3717/5 x127y100C_AND///AND/            route-del:  1965 ps   CPE-del:   500 ps   path-del: 15370 ps
+   3717_1 x127y100 ->    4392/2 x136y93 C_////Bridge            route-del:  1795 ps   CPE-del:   217 ps   path-del: 17384 ps
+   4392_2 x136y93  ->     853/7 x133y94 C_XOR////               route-del:   618 ps   CPE-del:   431 ps   path-del: 18407 ps
+    853_1 x133y94  ->     881/6 x122y79 C_XOR////               route-del:  2129 ps   CPE-del:   513 ps   path-del: 21057 ps
+    881_1 x122y79  ->    4215/3 x79y67  C_////Bridge            route-del:  2398 ps   CPE-del:   217 ps   path-del: 23674 ps
+   4215_2 x79y67   ->    1495/1 x79y68  C_///XOR/               route-del:   449 ps   CPE-del:   556 ps   path-del: 24668 ps
+   1495_2 x79y68   ->    1551/2 x71y65  C_///XOR/               route-del:  1674 ps   CPE-del:   584 ps   path-del: 26931 ps
+   1551_2 x71y65   ->    2561/5 x72y71  C_AND/D///              route-del:   667 ps   CPE-del:   367 ps   path-del: 27970 ps
+                         2561/5 x72y71   Setup D                route-del:   100 ps                       path-del: 28070 ps
+3025/14 x125y97 - 2561/14 x72y71  Clk-Skew                      route-del:  6698 ps                       path-del: 34768 ps
+
+
+Time (s):      11.848
+
+
+
+
+............
+
+Route statistics:   MUX/Con: 2.13   not routed: 85   Ripups: 313
+mode:1
+
+
+Route statistics:   MUX/Con: 2.13   not routed: 80   Ripups: 313
+mode:2
+........
+
+Route statistics:   MUX/Con: 2.13   not routed: 4   Ripups: 313
+mode:3
+
+
+Route statistics:   MUX/Con: 2.13   not routed: 3   Ripups: 313
+mode:4
+
+
+Route statistics:   MUX/Con: 2.13   not routed: 5   Ripups: 313
+mode:5
+
+
+Route statistics:   MUX/Con: 2.13   not routed: 3   Ripups: 0
+mode:6
+
+
+Route statistics:   MUX/Con: 2.13   not routed: 1   Ripups: 0
+mode:7
+
+
+Route statistics:   MUX/Con: 2.13   not routed: 0   Ripups: 0
+mode:8
+
+Time (s):      12.050
+
+
+SDF Generation
+
+Time (s):      12.498
+
+Static Timing Analysis
+Longest Path from Q of Component 3025_2 to D-Input of Component 2561/5 Delay: 34756 ps
+Maximum Clock Frequency on CLK 4478 (4478/3):   28.77 MHz
+
+Path details:
+   3025_2 x123y97    CLK -> Q                                                         CPE-del:   320 ps   path-del:   320 ps
+   3025_2 x123y97  ->     813/5 x135y100C_XOR////               route-del:  2277 ps   CPE-del:   500 ps   path-del:  3097 ps
+    813_1 x135y100 ->    3709/6 x133y99 C_XOR////               route-del:   857 ps   CPE-del:   513 ps   path-del:  4468 ps
+   3709_1 x133y99  ->    4391/1 x140y101C_////Bridge            route-del:  1302 ps   CPE-del:   217 ps   path-del:  5989 ps
+   4391_2 x140y101 ->    1835/7 x137y102C_MX4b////              route-del:   654 ps   CPE-del:   578 ps   path-del:  7153 ps
+   1835_1 x137y102 ->    1836/2 x135y98 C_///XOR/               route-del:  1310 ps   CPE-del:   584 ps   path-del:  9011 ps
+   1836_2 x135y98  ->    4276/2 x140y93 C_////Bridge            route-del:  2220 ps   CPE-del:   217 ps   path-del: 11429 ps
+   4276_2 x140y93  ->     830/7 x137y95 C_MX4b////              route-del:  1196 ps   CPE-del:   578 ps   path-del: 13169 ps
+    830_1 x137y95  ->    3717/5 x127y100C_AND///AND/            route-del:  1965 ps   CPE-del:   500 ps   path-del: 15546 ps
+   3717_1 x127y100 ->    4392/2 x136y93 C_////Bridge            route-del:  1795 ps   CPE-del:   217 ps   path-del: 17560 ps
+   4392_2 x136y93  ->     853/7 x133y94 C_XOR////               route-del:   618 ps   CPE-del:   431 ps   path-del: 18583 ps
+    853_1 x133y94  ->     881/6 x122y79 C_XOR////               route-del:  2129 ps   CPE-del:   513 ps   path-del: 21233 ps
+    881_1 x122y79  ->    4215/3 x79y67  C_////Bridge            route-del:  2398 ps   CPE-del:   217 ps   path-del: 23850 ps
+   4215_2 x79y67   ->    1495/1 x79y68  C_///XOR/               route-del:   449 ps   CPE-del:   556 ps   path-del: 24844 ps
+   1495_2 x79y68   ->    1551/2 x71y65  C_///XOR/               route-del:  1674 ps   CPE-del:   584 ps   path-del: 27107 ps
+   1551_2 x71y65   ->    2561/5 x72y71  C_AND/D///              route-del:   667 ps   CPE-del:   367 ps   path-del: 28146 ps
+                         2561/5 x72y71   Setup D                route-del:   100 ps                       path-del: 28246 ps
+3025/14 x123y97 - 2561/14 x72y71  Clk-Skew                      route-del:  6510 ps                       path-del: 34756 ps
+
+
+Time (s):      12.540
+
+
+
+
+....
+
+Route statistics:   MUX/Con: 2.14   not routed: 89   Ripups: 0
+mode:1
+
+
+Route statistics:   MUX/Con: 2.14   not routed: 89   Ripups: 0
+mode:2
+.........
+
+Route statistics:   MUX/Con: 2.15   not routed: 0   Ripups: 0
+mode:3
+
+Time (s):      12.735
+
+
+SDF Generation
+
+Time (s):      13.182
+
+Static Timing Analysis
+Longest Path from Q of Component 3033_2 to D-Input of Component 2665/7 Delay: 39362 ps
+Maximum Clock Frequency on CLK 4478 (4478/3):   25.41 MHz
+
+Path details:
+   3033_2 x127y89    CLK -> Q                                                         CPE-del:   320 ps   path-del:   320 ps
+   3033_2 x127y89  ->     891/5 x139y86 C_XOR////               route-del:  7443 ps   CPE-del:   500 ps   path-del:  8263 ps
+    891_1 x139y86  ->    3744/2 x133y90 C_///XOR/               route-del:  1983 ps   CPE-del:   584 ps   path-del: 10835 ps
+   3744_2 x133y90  ->     890/2 x140y95 C_///AND/               route-del:  1324 ps   CPE-del:   584 ps   path-del: 12715 ps
+    890_2 x140y95  ->     889/7 x142y96 C_ANDXOR////            route-del:   466 ps   CPE-del:   431 ps   path-del: 13571 ps
+    889_1 x142y96  ->     888/4 x140y96 C_XOR////               route-del:   655 ps   CPE-del:   507 ps   path-del: 14745 ps
+    888_1 x140y96  ->    3752/4 x139y91 C_///XOR/               route-del:   642 ps   CPE-del:   541 ps   path-del: 15926 ps
+   3752_2 x139y91  ->     907/5 x141y93 C_MX4b////              route-del:  1271 ps   CPE-del:   572 ps   path-del: 17686 ps
+    907_1 x141y93  ->    3760/5 x138y90 C_XOR////               route-del:  1189 ps   CPE-del:   500 ps   path-del: 19364 ps
+   3760_1 x138y90  ->     932/4 x138y84 C_MX4a////              route-del:  1283 ps   CPE-del:   494 ps   path-del: 21087 ps
+    932_1 x138y84  ->     931/8 x135y86 C_XOR////               route-del:  2017 ps   CPE-del:   452 ps   path-del: 23528 ps
+    931_1 x135y86  ->     937/2 x131y86 C_///XOR/               route-del:   792 ps   CPE-del:   584 ps   path-del: 24894 ps
+    937_2 x131y86  ->    4231/2 x95y79  C_////Bridge            route-del:  2189 ps   CPE-del:   217 ps   path-del: 27302 ps
+   4231_2 x95y79   ->    1623/5 x94y78  C_XOR////               route-del:  1032 ps   CPE-del:   500 ps   path-del: 28834 ps
+   1623_1 x94y78   ->    1655/4 x78y71  C_///XOR/               route-del:  2567 ps   CPE-del:   541 ps   path-del: 31956 ps
+   1655_2 x78y71   ->    2665/7 x79y74  C_AND/D///              route-del:  1499 ps   CPE-del:   298 ps   path-del: 33760 ps
+                         2665/7 x79y74   Setup D                route-del:   100 ps                       path-del: 33860 ps
+3033/14 x127y89 - 2665/14 x79y74  Clk-Skew                      route-del:  5502 ps                       path-del: 39362 ps
+
+
+Time (s):      13.222
+
+
+
+
+.
+
+Route statistics:   MUX/Con: 2.15   not routed: 85   Ripups: 0
+mode:1
+.
+
+Route statistics:   MUX/Con: 2.15   not routed: 84   Ripups: 0
+mode:2
+.......
+
+Route statistics:   MUX/Con: 2.17   not routed: 9   Ripups: 0
+mode:3
+
+
+Route statistics:   MUX/Con: 2.17   not routed: 9   Ripups: 0
+mode:4
+
+
+Route statistics:   MUX/Con: 2.17   not routed: 13   Ripups: 0
+mode:5
+
+
+Route statistics:   MUX/Con: 2.17   not routed: 9   Ripups: 0
+mode:6
+.
+
+Route statistics:   MUX/Con: 2.17   not routed: 1   Ripups: 0
+mode:7
+
+
+Route statistics:   MUX/Con: 2.17   not routed: 0   Ripups: 0
+mode:8
+
+Time (s):      13.445
+
+
+SDF Generation
+
+Time (s):      13.888
+
+Static Timing Analysis
+Longest Path from Q of Component 3033_2 to D-Input of Component 2665/7 Delay: 39362 ps
+Maximum Clock Frequency on CLK 4478 (4478/3):   25.41 MHz
+
+Path details:
+   3033_2 x127y89    CLK -> Q                                                         CPE-del:   320 ps   path-del:   320 ps
+   3033_2 x127y89  ->     891/5 x139y86 C_XOR////               route-del:  7443 ps   CPE-del:   500 ps   path-del:  8263 ps
+    891_1 x139y86  ->    3744/2 x133y90 C_///XOR/               route-del:  1983 ps   CPE-del:   584 ps   path-del: 10835 ps
+   3744_2 x133y90  ->     890/2 x140y95 C_///AND/               route-del:  1324 ps   CPE-del:   584 ps   path-del: 12715 ps
+    890_2 x140y95  ->     889/7 x142y96 C_ANDXOR////            route-del:   466 ps   CPE-del:   431 ps   path-del: 13571 ps
+    889_1 x142y96  ->     888/4 x140y96 C_XOR////               route-del:   655 ps   CPE-del:   507 ps   path-del: 14745 ps
+    888_1 x140y96  ->    3752/4 x139y91 C_///XOR/               route-del:   642 ps   CPE-del:   541 ps   path-del: 15926 ps
+   3752_2 x139y91  ->     907/5 x141y93 C_MX4b////              route-del:  1271 ps   CPE-del:   572 ps   path-del: 17686 ps
+    907_1 x141y93  ->    3760/5 x138y90 C_XOR////               route-del:  1189 ps   CPE-del:   500 ps   path-del: 19364 ps
+   3760_1 x138y90  ->     932/4 x138y84 C_MX4a////              route-del:  1283 ps   CPE-del:   494 ps   path-del: 21087 ps
+    932_1 x138y84  ->     931/8 x135y86 C_XOR////               route-del:  2017 ps   CPE-del:   452 ps   path-del: 23528 ps
+    931_1 x135y86  ->     937/2 x131y86 C_///XOR/               route-del:   792 ps   CPE-del:   584 ps   path-del: 24894 ps
+    937_2 x131y86  ->    4231/2 x95y79  C_////Bridge            route-del:  2189 ps   CPE-del:   217 ps   path-del: 27302 ps
+   4231_2 x95y79   ->    1623/5 x94y78  C_XOR////               route-del:  1032 ps   CPE-del:   500 ps   path-del: 28834 ps
+   1623_1 x94y78   ->    1655/4 x78y71  C_///XOR/               route-del:  2567 ps   CPE-del:   541 ps   path-del: 31956 ps
+   1655_2 x78y71   ->    2665/7 x79y74  C_AND/D///              route-del:  1499 ps   CPE-del:   298 ps   path-del: 33760 ps
+                         2665/7 x79y74   Setup D                route-del:   100 ps                       path-del: 33860 ps
+3033/14 x127y89 - 2665/14 x79y74  Clk-Skew                      route-del:  5502 ps                       path-del: 39362 ps
+
+
+Time (s):      13.926
+
+
+
+
+
+
+Route statistics:   MUX/Con: 2.17   not routed: 0   Ripups: 1
+mode:1
+
+Time (s):      13.932
+
+
+SDF Generation
+
+Time (s):      14.377
+
+Static Timing Analysis
+Longest Path from Q of Component 3033_2 to D-Input of Component 2665/7 Delay: 39362 ps
+Maximum Clock Frequency on CLK 4478 (4478/3):   25.41 MHz
+
+Path details:
+   3033_2 x127y89    CLK -> Q                                                         CPE-del:   320 ps   path-del:   320 ps
+   3033_2 x127y89  ->     891/5 x139y86 C_XOR////               route-del:  7443 ps   CPE-del:   500 ps   path-del:  8263 ps
+    891_1 x139y86  ->    3744/2 x133y90 C_///XOR/               route-del:  1983 ps   CPE-del:   584 ps   path-del: 10835 ps
+   3744_2 x133y90  ->     890/2 x140y95 C_///AND/               route-del:  1324 ps   CPE-del:   584 ps   path-del: 12715 ps
+    890_2 x140y95  ->     889/7 x142y96 C_ANDXOR////            route-del:   466 ps   CPE-del:   431 ps   path-del: 13571 ps
+    889_1 x142y96  ->     888/4 x140y96 C_XOR////               route-del:   655 ps   CPE-del:   507 ps   path-del: 14745 ps
+    888_1 x140y96  ->    3752/4 x139y91 C_///XOR/               route-del:   642 ps   CPE-del:   541 ps   path-del: 15926 ps
+   3752_2 x139y91  ->     907/5 x141y93 C_MX4b////              route-del:  1271 ps   CPE-del:   572 ps   path-del: 17686 ps
+    907_1 x141y93  ->    3760/5 x138y90 C_XOR////               route-del:  1189 ps   CPE-del:   500 ps   path-del: 19364 ps
+   3760_1 x138y90  ->     932/4 x138y84 C_MX4a////              route-del:  1283 ps   CPE-del:   494 ps   path-del: 21087 ps
+    932_1 x138y84  ->     931/8 x135y86 C_XOR////               route-del:  2017 ps   CPE-del:   452 ps   path-del: 23528 ps
+    931_1 x135y86  ->     937/2 x131y86 C_///XOR/               route-del:   792 ps   CPE-del:   584 ps   path-del: 24894 ps
+    937_2 x131y86  ->    4231/2 x95y79  C_////Bridge            route-del:  2189 ps   CPE-del:   217 ps   path-del: 27302 ps
+   4231_2 x95y79   ->    1623/5 x94y78  C_XOR////               route-del:  1032 ps   CPE-del:   500 ps   path-del: 28834 ps
+   1623_1 x94y78   ->    1655/4 x78y71  C_///XOR/               route-del:  2567 ps   CPE-del:   541 ps   path-del: 31956 ps
+   1655_2 x78y71   ->    2665/7 x79y74  C_AND/D///              route-del:  1499 ps   CPE-del:   298 ps   path-del: 33760 ps
+                         2665/7 x79y74   Setup D                route-del:   100 ps                       path-del: 33860 ps
+3033/14 x127y89 - 2665/14 x79y74  Clk-Skew                      route-del:  5502 ps                       path-del: 39362 ps
+
+
+Time (s):      14.415
+
+
+
+
+
+Time (s):      14.415
+
+
+SDF Generation
+
+Time (s):      15.254
+
+Static Timing Analysis
+
+Skew violation report using only 80% delay of data path
+
+No critical Skew found
+
+Longest Path from Q of Component 3033_2 to D-Input of Component 2665/7 Delay: 39362 ps
+Maximum Clock Frequency on CLK 4478 (4478/3):   25.41 MHz
+
+Path details:
+   3033_2 x127y89    CLK -> Q                                                         CPE-del:   320 ps   path-del:   320 ps
+   3033_2 x127y89  ->     891/5 x139y86 C_XOR////               route-del:  7443 ps   CPE-del:   500 ps   path-del:  8263 ps
+    891_1 x139y86  ->    3744/2 x133y90 C_///XOR/               route-del:  1983 ps   CPE-del:   584 ps   path-del: 10835 ps
+   3744_2 x133y90  ->     890/2 x140y95 C_///AND/               route-del:  1324 ps   CPE-del:   584 ps   path-del: 12715 ps
+    890_2 x140y95  ->     889/7 x142y96 C_ANDXOR////            route-del:   466 ps   CPE-del:   431 ps   path-del: 13571 ps
+    889_1 x142y96  ->     888/4 x140y96 C_XOR////               route-del:   655 ps   CPE-del:   507 ps   path-del: 14745 ps
+    888_1 x140y96  ->    3752/4 x139y91 C_///XOR/               route-del:   642 ps   CPE-del:   541 ps   path-del: 15926 ps
+   3752_2 x139y91  ->     907/5 x141y93 C_MX4b////              route-del:  1271 ps   CPE-del:   572 ps   path-del: 17686 ps
+    907_1 x141y93  ->    3760/5 x138y90 C_XOR////               route-del:  1189 ps   CPE-del:   500 ps   path-del: 19364 ps
+   3760_1 x138y90  ->     932/4 x138y84 C_MX4a////              route-del:  1283 ps   CPE-del:   494 ps   path-del: 21087 ps
+    932_1 x138y84  ->     931/8 x135y86 C_XOR////               route-del:  2017 ps   CPE-del:   452 ps   path-del: 23528 ps
+    931_1 x135y86  ->     937/2 x131y86 C_///XOR/               route-del:   792 ps   CPE-del:   584 ps   path-del: 24894 ps
+    937_2 x131y86  ->    4231/2 x95y79  C_////Bridge            route-del:  2189 ps   CPE-del:   217 ps   path-del: 27302 ps
+   4231_2 x95y79   ->    1623/5 x94y78  C_XOR////               route-del:  1032 ps   CPE-del:   500 ps   path-del: 28834 ps
+   1623_1 x94y78   ->    1655/4 x78y71  C_///XOR/               route-del:  2567 ps   CPE-del:   541 ps   path-del: 31956 ps
+   1655_2 x78y71   ->    2665/7 x79y74  C_AND/D///              route-del:  1499 ps   CPE-del:   298 ps   path-del: 33760 ps
+                         2665/7 x79y74   Setup D                route-del:   100 ps                       path-del: 33860 ps
+3033/14 x127y89 - 2665/14 x79y74  Clk-Skew                      route-del:  5502 ps                       path-del: 39362 ps
+
+
+
+
+
+Time (s):      15.343
+
+Utilization Report
+
+ CPEs                   3050 /  20480  ( 14.9 %)
+ -----------------------------------------------
+   CPE Registers        1333 /  40960  (  3.3 %)
+     Flip-flops         1333
+     Latches               0
+
+ GPIOs                    10 /    144  (  6.9 %)
+ -----------------------------------------------
+   Single-ended           10 /    144  (  6.9 %)
+     IBF                   3
+     OBF                   7
+     TOBF                  0
+     IOBF                  0
+   LVDS pairs              0 /     72  (  0.0 %)
+     IBF                   0
+     OBF                   0
+     TOBF                  0
+     IOBF                  0
+
+ GPIO Registers            0 /    288  (  0.0 %)
+ -----------------------------------------------
+   FF_IBF                  0
+   FF_OBF                  0
+   IDDR                    0
+   ODDR                    0
+
+ Block RAMs              0.0 /     32  (  0.0 %)
+ -----------------------------------------------
+   BRAM_20K                0 /     64  (  0.0 %)
+   BRAM_40K                0 /     32  (  0.0 %)
+   FIFO_40K                0 /     32  (  0.0 %)
+
+ PLLs                      0 /      4  (  0.0 %)
+ GLBs                      1 /      4  ( 25.0 %)
+ SerDes                    0 /      1  (  0.0 %)
+
+
+
+
+Verilog Netlist Generation
+
+before generate_netlist Time (s):      15.524
+
+
+
+                        aes256_uart_00.vGatecount:   3693
+
+
+
+Time (s):      16.552
+
+Generate SDF for fast simulation
+
+CFG-File Generation
+
+Time (s):      18.382
+
+End of Place & Route
