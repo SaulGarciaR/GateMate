@@ -5214,6 +5214,6 @@ Removed 0 unused cells and 298 unused wires.
 17.52.2. Executing DEMUXMAP pass.
 Dumping module `\aes256_uart'.
 
-End of script. Logfile hash: d787c26baa, CPU: user 5.27s system 0.03s, MEM: 52.79 MB peak
+End of script. Logfile hash: d787c26baa, CPU: user 5.44s system 0.02s, MEM: 52.57 MB peak
 Yosys 0.24 (git sha1 313b7997b, g++ 12.2.0 -Os)
 Time spent: 25% 75x opt_expr (1 sec), 17% 76x opt_clean (1 sec), ...

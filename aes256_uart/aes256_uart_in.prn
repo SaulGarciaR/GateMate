@@ -1,7 +1,7 @@
 //  (c) Cologne Chip AG
 //  FPGA netlist writer     Version: 4.2 (28 Feb 2023)
 //  Compile Time: 2023-02-28 18:50:27
-//  Program Run:  2023-08-03 16:36:36
+//  Program Run:  2023-08-04 13:33:05
 //  Program Call: ../../bin/p_r/p_r -i net/aes256_uart_synth.v -o aes256_uart -ccf src/aes256_uart.ccf 
 //  File Type:    internal Format
 
