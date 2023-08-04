@@ -141,6 +141,7 @@ aes256_uart aes256_uart_u   (
                             .clk(clk),
                             .reset_n(reset_n),
                             .data_in(tx),
+                            .led(),
                             .data_out(rx)   // output
                             );
                             
