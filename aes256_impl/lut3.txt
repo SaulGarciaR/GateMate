@@ -1,0 +1,23 @@
+0001   3 abc
+0007  18 c/AB\
+000E   2 c/ab\
+0010   2 abC
+0014   4 (B^C)a
+0018   3 AB?C:0:0:c
+001E   3 (ab)^c
+001F   1 (ab)+c
+0035  35 c?b:a
+0040   1 aBC
+0041   2 (B^c)a
+0053   1 C?b:a
+0060   1 C(A^B)
+0069  41 A^B^c
+0070   6 C/AB\
+0096  90 A^B^C
+00BF   1 /aB\+c
+00E1   3 (ab)^C
+00EF   2 /ab\+c
+00F1   1 (ab)+C
+00F4   1 (aB)+C
+00F8   3 (AB)+C
+ Gesamt:  224 DS4:     1

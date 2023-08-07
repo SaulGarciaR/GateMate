@@ -1,0 +1,16 @@
+# Pinfile for Design aes256_impl_00
+# 2023-08-07 04:02:48
+# Bounding Box for compact mode is (x79y64) - (x124y110)   box size: 2162
+
+SizeX = 160 | SizeY = 128;
+
+Pin_in            "clk10"   Loc =   "IO_WB_A0"   Die_Loc = "GPIO_S1_A[0]";  # 
+Pin_out          "led[0]"   Loc =   "IO_EB_B1"   Die_Loc = "GPIO_N2_B[1]";  #  preplaced by CCF file
+Pin_out          "led[1]"   Loc =   "IO_EB_B2"   Die_Loc = "GPIO_N2_B[2]";  #  preplaced by CCF file
+Pin_out          "led[2]"   Loc =   "IO_EB_B3"   Die_Loc = "GPIO_N2_B[3]";  #  preplaced by CCF file
+Pin_out          "led[3]"   Loc =   "IO_EB_B4"   Die_Loc = "GPIO_N2_B[4]";  #  preplaced by CCF file
+Pin_out          "led[4]"   Loc =   "IO_EB_B5"   Die_Loc = "GPIO_N2_B[5]";  #  preplaced by CCF file
+Pin_out          "led[5]"   Loc =   "IO_EB_B6"   Die_Loc = "GPIO_N2_B[6]";  #  preplaced by CCF file
+Pin_out          "led[6]"   Loc =   "IO_EB_B7"   Die_Loc = "GPIO_N2_B[7]";  #  preplaced by CCF file
+Pin_out          "led[7]"   Loc =   "IO_EB_B8"   Die_Loc = "GPIO_N2_B[8]";  #  preplaced by CCF file
+Pin_in          "reset_n"   Loc =   "IO_EB_B0"   Die_Loc = "GPIO_N2_B[0]";  #  preplaced by CCF file

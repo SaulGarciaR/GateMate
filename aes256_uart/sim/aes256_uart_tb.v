@@ -84,6 +84,9 @@ always @(reset_enable)
 initial
   begin
 
+    $dumpfile("sim/aes256_uart_tb.vcd");
+    $dumpvars(0, aes256_uart_tb);
+    
     -> reset_enable;                // reset pulse
     @(reset_done);                  // wait until reset is done
 

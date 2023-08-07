@@ -1,6 +1,6 @@
 # Pinfile for Design aes256_uart_00
-# 2023-08-04 13:33:06
-# Bounding Box for compact mode is (x87y66) - (x147y116)   box size: 3111
+# 2023-08-07 04:09:46
+# Bounding Box for compact mode is (x80y59) - (x154y102)   box size: 3300
 
 SizeX = 160 | SizeY = 128;
 

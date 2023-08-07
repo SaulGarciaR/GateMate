@@ -247,7 +247,7 @@ assign led = cnt_rx;
 
 // ---------- MODULES INSTANTIATION ----------
 
-aes256_enc  aes256_enc      (
+aes256_enc  aes256_enc_u    (
                             .clk(clk),
                             .reset_n(reset_n),
                             .start(aes_start),

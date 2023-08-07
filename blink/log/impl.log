@@ -1,0 +1,420 @@
+GateMate (c) Place and Route
+Version 4.2 (1 Jul 2023)
+All Rights Reserved (c) Cologne Chip AG
+
+Command line Options:
+       h:  False
+       i: net/blink_synth.v
+       o:  blink
+     mXA:   True
+     mMA:   True
+    Cinp:  False
+   Coutp:  False
+     cdf:   True
+     pin:   True
+     plc:   True
+       s:   True
+     cCP:   True
+     gCP:  False
+      AF:   True
+      dC:   True
+    uCIO:  False
+      pB:       
+      sp:  False
+     crf:  False
+       v:  False
+      Gs:      0
+      om:      3
+      sf:    0.8
+      dl:   True
+      df:   True
+   m_spi:      0
+      pr:   True
+     cgb:  False
+    cgbc:  False
+     cgo:      0
+      tm:      3
+      tp:      0
+   s_spi:      0
+     ics:  False
+     lib:   ccag
+     ccf: src/blink.ccf
+
+X_CONVERT Netlist Converter
+
+Library Mode used: CCAG_GateMate
+
+819 Lines read
+
+found components:
+        CC_LUT2        27
+        CC_ADDF        27
+        CC_BUFG         1
+         CC_DFF        27
+        CC_IBUF         2
+        CC_OBUF         1
+         CC_PLL         1
+
+REMOVE_UNUSED
+         0 unused Components removed
+REMOVE_BUF_INV
+         0 BUF removed
+         0 INV removed
+REPLACE_LUTS
+REPLACE_OTHERS
+Number of inserted dummy components 0
+0 new components inserted
+WRITE_REFCOMP
+SAVE_NET
+
+Conversion finished!
+ASCII netlist generated: blink_x_convert.prn
+Time (s):       0.063
+
+Read blink.net
+
+MAPPER started
+
+Map Adder
+1 Adder chains mapped
+
+During map of 0 CPEs 0 gates deleted!
+
+13 CPEs replaced by double bit CPEs
+
+Number of Combined CPEs:    27
+
+WARNING: PLL 1 mode is 'ECONOMY' but FPGA mode is 'SPEED'.
+PLL fout= 100.0000 MHz (fout error ± 0.00 % of requested 100.0000 MHz)
+PLL0 configured with output frequency: 100.0000 MHz  
+PLACER started
+
+FanOut statistics:
+FO:      1 count:     67   94.4 %      connect count:     67   59.8 %  cumulated:     67   59.8 %
+FO:      2 count:      2    2.8 %      connect count:      4    3.6 %  cumulated:     71   63.4 %
+FO:     14 count:      1    1.4 %      connect count:     14   12.5 %  cumulated:     85   75.9 %
+FO:     27 count:      1    1.4 %      connect count:     27   24.1 %  cumulated:    112  100.0 %
+Number of Outputs:    71
+Average FanOut:     1,57
+
+FanIn statistics:
+FI:      1 count:      5   15.6 %      connect count:      5    4.4 %  cumulated:      5    4.4 %
+FI:      3 count:     13   40.6 %      connect count:     39   34.5 %  cumulated:     44   38.9 %
+FI:      4 count:      1    3.1 %      connect count:      4    3.5 %  cumulated:     48   42.5 %
+FI:      5 count:     13   40.6 %      connect count:     65   57.5 %  cumulated:    113  100.0 %
+Number of Inputs:    32
+Average FanIn:     3,53
+
+Pins are placed from src/blink.ccf file
+
+Centerpoint:  x: 79.25 y: 121.75
+WARNING: still unplaced components existing
+
+Centerpoint:  x: 79.25 y: 121.75
+
+
+Time (s):       0.094
+
+Netlength (initial): 5845.57
+
+Quadratisches Placement: TRUE
+    1  Netlength: 5103.84   diff(%): 0.00000   0
+    2  Netlength: 4724.85   diff(%): 8.02121   1
+    3  Netlength: 4417.86   diff(%): 6.94883   1
+    4  Netlength: 4157.05   diff(%): 6.27378   1
+    5  Netlength: 3926.66   diff(%): 5.86737   1
+    6  Netlength: 3718.63   diff(%): 5.59437   1
+    7  Netlength: 3527.77   diff(%): 5.41014   1
+    8  Netlength: 3350.65   diff(%): 5.28632   1
+    9  Netlength: 3184.90   diff(%): 5.20400   1
+   10  Netlength: 3028.91   diff(%): 5.15033   1
+   11  Netlength: 2881.47   diff(%): 5.11650   1
+   12  Netlength: 2741.74   diff(%): 5.09646   1
+   13  Netlength: 2609.04   diff(%): 5.08607   1
+   14  Netlength: 2482.85   diff(%): 5.08246   1
+   15  Netlength: 2362.74   diff(%): 5.08371   1
+   16  Netlength: 2248.33   diff(%): 5.08848   1
+   17  Netlength: 2139.32   diff(%): 5.09589   1
+   18  Netlength: 2035.40   diff(%): 5.10532   1
+   19  Netlength: 1936.33   diff(%): 5.11637   1
+   20  Netlength: 1841.87   diff(%): 5.12880   1
+   21  Netlength: 1751.78   diff(%): 5.14242   1
+   22  Netlength: 1665.87   diff(%): 5.15715   1
+   23  Netlength: 1583.94   diff(%): 5.17293   1
+   24  Netlength: 1505.79   diff(%): 5.18976   1
+   25  Netlength: 1431.25   diff(%): 5.20764   1
+   26  Netlength: 1360.26   diff(%): 5.21918   1
+   27  Netlength: 1293.19   diff(%): 5.18649   1
+   28  Netlength: 1229.22   diff(%): 5.20437   1
+   29  Netlength: 1168.20   diff(%): 5.22327   1
+   30  Netlength: 1110.00   diff(%): 5.24325   1
+   31  Netlength: 1054.49   diff(%): 5.26438   1
+   32  Netlength: 1001.54   diff(%): 5.28671   1
+   33  Netlength: 951.03   diff(%): 5.31034   1
+   34  Netlength: 902.86   diff(%): 5.33535   1
+   35  Netlength: 856.92   diff(%): 5.36182   1
+   36  Netlength: 813.09   diff(%): 5.38986   1
+   37  Netlength: 771.29   diff(%): 5.41958   1
+   38  Netlength: 731.42   diff(%): 5.45109   1
+   39  Netlength: 693.39   diff(%): 5.48452   1
+   40  Netlength: 657.12   diff(%): 5.52001   1
+   41  Netlength: 622.52   diff(%): 5.55772   1
+   42  Netlength: 589.52   diff(%): 5.59781   1
+   43  Netlength: 558.10   diff(%): 5.63085   1
+   44  Netlength: 528.81   diff(%): 5.53813   1
+   45  Netlength: 500.88   diff(%): 5.57698   1
+   46  Netlength: 474.23   diff(%): 5.61830   1
+   47  Netlength: 448.82   diff(%): 5.66228   1
+   48  Netlength: 424.58   diff(%): 5.70914   1
+   49  Netlength: 401.46   diff(%): 5.75911   1
+   50  Netlength: 379.41   diff(%): 5.81244   1
+   51  Netlength: 358.73   diff(%): 5.76256   1
+   52  Netlength: 339.39   diff(%): 5.69862   1
+   53  Netlength: 320.94   diff(%): 5.74788   1
+   54  Netlength: 303.35   diff(%): 5.80046   1
+   55  Netlength: 286.57   diff(%): 5.85662   1
+   56  Netlength: 270.63   diff(%): 5.88837   1
+   57  Netlength: 256.10   diff(%): 5.67483   1
+   58  Netlength: 242.24   diff(%): 5.72251   1
+   59  Netlength: 229.01   diff(%): 5.77338   1
+   60  Netlength: 216.40   diff(%): 5.82709   1
+   61  Netlength: 205.11   diff(%): 5.50418   1
+   62  Netlength: 194.35   diff(%): 5.54089   1
+   63  Netlength: 184.07   diff(%): 5.57992   1
+   64  Netlength: 174.86   diff(%): 5.27163   1
+   65  Netlength: 166.22   diff(%): 5.19302   1
+   66  Netlength: 158.14   diff(%): 5.11205   1
+   67  Netlength: 151.02   diff(%): 4.71526   1
+   68  Netlength: 144.32   diff(%): 4.64448   1
+   69  Netlength: 138.57   diff(%): 4.14467   1
+   70  Netlength: 133.47   diff(%): 3.82380   1
+   71  Netlength: 129.11   diff(%): 3.37981   1
+   72  Netlength: 125.68   diff(%): 2.72573   1
+   73  Netlength: 123.36   diff(%): 1.87820   1
+   74  Netlength: 122.63   diff(%): 0.59454   1
+   75  Netlength: 121.96   diff(%): 0.55455   1
+   76  Netlength: 121.31   diff(%): 0.53175   1
+   77  Netlength: 120.70   diff(%): 0.50978   1
+   78  Netlength: 120.11   diff(%): 0.48862   1
+   79  Netlength: 119.55   diff(%): 0.46823   2
+
+Time (s):       0.102
+
+CPE Component Statistics:
+         AND        28        51%
+       ADDF2        26        48%
+              --------
+Sum of COMB:        54
+
+           D        27        96%
+       C_0_1         1         3%
+              --------
+Sum of SEQ:         28
+
+Sum of all:         82
+
+Time (s):       0.489
+
+1 Adder Chains inserted
+
+Netlength after adder insertion: 1051.00
+
+Time (s):       0.504
+
+CPE input statistics:
+Fanin:  1 count:      1   CPE %:  3.6
+Fanin:  2 count:      0   CPE %:  0.0
+Fanin:  3 count:     13   CPE %: 46.4
+Fanin:  4 count:      1   CPE %:  3.6
+Fanin:  5 count:     13   CPE %: 46.4
+Average:  3.89
+Number of Netlist Components:    28
+Number of Inputs:   109
+
+ROUTER started
+Number of usable Bridges using OUT2: 20452
+Number of Bridges to insert: 0
+
+
+Netlength after Bridge Insert:       1010
+
+Time (s):       1.056
+
+Preroute fixed connections
+.
+FanOut statistics:
+FO:      1 count:      6   16.2 %      connect count:      6    4.1 %  cumulated:      6    4.1 %
+FO:      2 count:     12   32.4 %      connect count:     24   16.6 %  cumulated:     30   20.7 %
+FO:      3 count:     14   37.8 %      connect count:     42   29.0 %  cumulated:     72   49.7 %
+FO:      4 count:      1    2.7 %      connect count:      4    2.8 %  cumulated:     76   52.4 %
+FO:     14 count:      3    8.1 %      connect count:     42   29.0 %  cumulated:    118   81.4 %
+FO:     27 count:      1    2.7 %      connect count:     27   18.6 %  cumulated:    145  100.0 %
+Number of Outputs:    37
+Average FanOut:     3,91
+
+FanIn statistics:
+FI:      1 count:      5   15.6 %      connect count:      5    4.4 %  cumulated:      5    4.4 %
+FI:      3 count:     13   40.6 %      connect count:     39   34.5 %  cumulated:     44   38.9 %
+FI:      4 count:      1    3.1 %      connect count:      4    3.5 %  cumulated:     48   42.5 %
+FI:      5 count:     13   40.6 %      connect count:     65   57.5 %  cumulated:    113  100.0 %
+Number of Inputs:    32
+Average FanIn:     3,53
+
+Time (s):       1.115
+.......
+
+Route statistics:   MUX/Con: 0.84   not routed: 15   Ripups: 0
+mode:1
+
+
+Route statistics:   MUX/Con: 0.84   not routed: 15   Ripups: 0
+mode:2
+..
+
+Route statistics:   MUX/Con: 1.00   not routed: 0   Ripups: 0
+mode:3
+
+Time (s):       1.134
+
+Time (s):       1.176
+
+
+SDF Generation
+
+Time (s):       1.212
+
+Static Timing Analysis
+Longest Path from Q of Component 4_1 to D-Input of Component 14/4 Delay: 3467 ps
+Maximum Clock Frequency on CLK 92 (92/3):  288.43 MHz
+
+Path details:
+      4_1 x79y113    CLK -> Q                                                         CPE-del:   226 ps   path-del:   226 ps
+      4_1 x79y113  ->      39/1 x78y113 C_ADDF2///ADDF2/        route-del:  1059 ps   CPE-del:   514 ps   path-del:  1776 ps
+     39_4 x78y113  ->     48/13 x78y114 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  1858 ps
+     48_4 x78y114  ->     50/13 x78y115 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  1940 ps
+     50_4 x78y115  ->     52/13 x78y116 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  2022 ps
+     52_4 x78y116  ->     54/13 x78y117 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  2104 ps
+     54_4 x78y117  ->     30/13 x78y118 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  2186 ps
+     30_4 x78y118  ->     32/13 x78y119 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  2268 ps
+     32_4 x78y119  ->     34/13 x78y120 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  2350 ps
+     34_4 x78y120  ->     36/13 x78y121 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  2432 ps
+     36_4 x78y121  ->     38/13 x78y122 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:   484 ps   path-del:  2892 ps
+     38_1 x78y122  ->      14/4 x79y122 C_AND/D//AND/D          route-del:   671 ps   CPE-del:   471 ps   path-del:  4042 ps
+                           14/4 x79y122  Setup D                route-del:   100 ps                       path-del:  4142 ps
+4/14 x79y113 - 14/14 x79y122      Clk-Skew                      route-del:  -576 ps                       path-del:  3467 ps
+
+
+Time (s):       1.213
+
+
+
+
+
+Time (s):       1.213
+
+
+SDF Generation
+
+Time (s):       1.252
+
+Static Timing Analysis
+
+Skew violation report using only 80% delay of data path
+
+No critical Skew found
+
+Longest Path from Q of Component 4_1 to D-Input of Component 14/4 Delay: 3467 ps
+Maximum Clock Frequency on CLK 92 (92/3):  288.43 MHz
+
+Path details:
+      4_1 x79y113    CLK -> Q                                                         CPE-del:   226 ps   path-del:   226 ps
+      4_1 x79y113  ->      39/1 x78y113 C_ADDF2///ADDF2/        route-del:  1059 ps   CPE-del:   514 ps   path-del:  1776 ps
+     39_4 x78y113  ->     48/13 x78y114 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  1858 ps
+     48_4 x78y114  ->     50/13 x78y115 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  1940 ps
+     50_4 x78y115  ->     52/13 x78y116 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  2022 ps
+     52_4 x78y116  ->     54/13 x78y117 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  2104 ps
+     54_4 x78y117  ->     30/13 x78y118 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  2186 ps
+     30_4 x78y118  ->     32/13 x78y119 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  2268 ps
+     32_4 x78y119  ->     34/13 x78y120 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  2350 ps
+     34_4 x78y120  ->     36/13 x78y121 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:    68 ps   path-del:  2432 ps
+     36_4 x78y121  ->     38/13 x78y122 C_ADDF2///ADDF2/        route-del:     0 ps   CPE-del:   484 ps   path-del:  2892 ps
+     38_1 x78y122  ->      14/4 x79y122 C_AND/D//AND/D          route-del:   671 ps   CPE-del:   471 ps   path-del:  4042 ps
+                           14/4 x79y122  Setup D                route-del:   100 ps                       path-del:  4142 ps
+4/14 x79y113 - 14/14 x79y122      Clk-Skew                      route-del:  -576 ps                       path-del:  3467 ps
+
+
+
+Longest Path from Q of Component 8 to Output via Output-Buffer 84 Delay: 4418 ps
+Longest Path from Input via Input-Buffer 85 to D-Input of Component 27 Delay: 3701 ps
+Longest Path from Input via Input-Buffer 85 to D-Input of Component 25 Delay: 3692 ps
+Longest Path from Input via Input-Buffer 85 to D-Input of Component 17 Delay: 3583 ps
+Longest Path from Input via Input-Buffer 85 to D-Input of Component 19 Delay: 3582 ps
+Longest Path from Input via Input-Buffer 85 to D-Input of Component 27 Delay: 3574 ps
+Longest Path from Input via Input-Buffer 85 to D-Input of Component 2 Delay: 3570 ps
+Longest Path from Input via Input-Buffer 85 to D-Input of Component 25 Delay: 3565 ps
+Longest Path from Input via Input-Buffer 85 to D-Input of Component 23 Delay: 3511 ps
+Longest Path from Input via Input-Buffer 85 to D-Input of Component 21 Delay: 3507 ps
+
+
+Time (s):       1.253
+
+Utilization Report
+
+ CPEs                     32 /  20480  (  0.2 %)
+ -----------------------------------------------
+   CPE Registers          27 /  40960  (  0.1 %)
+     Flip-flops           27
+     Latches               0
+
+ GPIOs                     3 /    144  (  2.1 %)
+ -----------------------------------------------
+   Single-ended            3 /    144  (  2.1 %)
+     IBF                   2
+     OBF                   1
+     TOBF                  0
+     IOBF                  0
+   LVDS pairs              0 /     72  (  0.0 %)
+     IBF                   0
+     OBF                   0
+     TOBF                  0
+     IOBF                  0
+
+ GPIO Registers            0 /    288  (  0.0 %)
+ -----------------------------------------------
+   FF_IBF                  0
+   FF_OBF                  0
+   IDDR                    0
+   ODDR                    0
+
+ Block RAMs              0.0 /     32  (  0.0 %)
+ -----------------------------------------------
+   BRAM_20K                0 /     64  (  0.0 %)
+   BRAM_40K                0 /     32  (  0.0 %)
+   FIFO_40K                0 /     32  (  0.0 %)
+
+ PLLs                      1 /      4  ( 25.0 %)
+ GLBs                      1 /      4  ( 25.0 %)
+ SerDes                    0 /      1  (  0.0 %)
+
+
+
+
+Verilog Netlist Generation
+
+before generate_netlist Time (s):       1.378
+
+
+
+                        blink_00.vGatecount:     35
+
+
+
+Time (s):       1.393
+
+Generate SDF for fast simulation
+
+CFG-File Generation
+
+Time (s):       1.520
+
+End of Place & Route
